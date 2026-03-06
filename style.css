@@ -1,0 +1,13 @@
+/* placeholder color values, change as you see fit */
+:root{
+    --bg:grey;
+    --panel:hsla(0,10%,89%,11%);
+    --text:black;   
+    --border:black;
+    --radius:16px;
+}
+
+
+
+/* Mobile first development */
+
