@@ -1,0 +1,17 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  gap: 18px;
+}
+
+/* .map {
+  grid-column: col-start 1 / span 8;
+  background-color: white;
+  height: 400px;
+}
+
+.graph {
+  grid-column: col-start 9 / span 4;
+  background-color: rgb(184, 45, 45);
+  height: 100px;
+} */
