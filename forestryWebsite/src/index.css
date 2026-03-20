@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
   --primary-color: #1c703f;
   --secondary-color: #58b07d;
-  --tertiary-color: #495d6a;
+  --tertiary-color: #1b1d1f;
   --background-color: #003014;
   --accent-color: #85332c;
   --text-color: #eeeeee;
-  --font-main: "Datatype", monospace;
+  --font-main: "Noto Sans", sans-serif;
   --font-secondary: "Courier Prime", monospace;
 }
 
