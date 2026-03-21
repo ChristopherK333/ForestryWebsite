@@ -8,7 +8,7 @@ import { Education } from "./pages/education/Education.jsx";
 import { Contact } from "./pages/contact/Contact.jsx";
 import { Layout } from "./Layout.jsx";
 import { Login } from "./pages/login/login.jsx"
-import { Signup} from "./pages/signup/signup.jsx"
+import { Signup } from "./pages/signup/signup.jsx"
 
 function App() {
   // const [token, setToken] = useState(null);  //groundwork for the login state
@@ -24,7 +24,7 @@ function App() {
           <Route path="/education" element={<Education />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login /> } />
-          <Route path="/Signup" element={<Signup /> } />
+          <Route path="/Signup" element={<Signup /> } /> 
         </Route>
       </Routes>
     </Router>

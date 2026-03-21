@@ -1,0 +1,46 @@
+:root {
+    --background: #044d40;
+    --accent: #68948c;
+
+}
+
+
+.banner img {
+    display: block;
+    margin: auto;
+    width: 98%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 12px;
+}
+
+
+
+.loginContainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 30px;
+}
+
+
+.formGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    align-items: center;
+}
+
+
+label {
+    text-align: right;
+    font-weight: bold;
+}
+
+.loginButtons button {
+    padding: 3px;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-family: "Courier Prime", monospace;
+}
