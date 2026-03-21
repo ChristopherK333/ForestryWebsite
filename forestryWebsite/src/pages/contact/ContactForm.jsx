@@ -13,27 +13,25 @@ export default function ContactForm() {
 
             <div class="formCard">
                 <form id="contactForm">
-                    <fieldset>
-                        <div class="formGrid">
-                            <label for="name">Full Name:</label>
-                            <input type="text" id="name"></input>
+                    <div class="formGrid">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name"></input>
 
-                            <label for="email">Email:</label>
-                            <input type="text" id="email" placeholder="example@gmail.com"
-                                pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}"></input>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" placeholder="example@gmail.com"
+                            pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}"></input>
 
-                            <label for="phone">Phone Number:</label>
-                            <input type="tel" id="phone" placeholder="(123) 456-7890"></input>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" placeholder="(123) 456-7890"></input>
 
-                            <label for="message">Message:</label>
-                            <textarea></textarea>
-                        </div>
+                        <label for="message">Message:</label>
+                        <textarea></textarea>
+                    </div>
 
-                        <div class="contactButtons">
-                            <button id="contactSubmit" type="submit">Send Message</button>
-                            <button id="contactReset" type="reset">Reset</button>
-                        </div>
-                    </fieldset>
+                    <div class="contactButtons">
+                        <button id="contactSubmit" type="submit">Send Message</button>
+                        <button id="contactReset" type="reset">Reset</button>
+                    </div>
                 </form>
             </div>
         </div>
