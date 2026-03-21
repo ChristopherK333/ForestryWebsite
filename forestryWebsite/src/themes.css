@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+:root {
+  --primary-color: #798a7a;
+  --secondary-color: #f44336;
+  --background-color: #ee2e2e;
+  --text-color: #c9dd18;
+  --font-main: "Datatype", monospace;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-main);
+  color: var(--text-color);
+}
+
+.light-theme {
+  --primary-color: #4caf50;
+  --secondary-color: #f44336;
+  --background-color: #f0f0f0;
+  --text-color: #333333;
+}
+
+.dark-theme {
+  --primary-color: #2e7d32;
+  --secondary-color: #c62828;
+  --background-color: #212121;
+  --text-color: #ffffff;
+}
