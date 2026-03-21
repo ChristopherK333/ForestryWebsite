@@ -5,7 +5,7 @@ export default function Values() {
 
       <table>
         <tr>
-          <th><div class="tableContainer"><h2>Accuracy</h2>
+          <th><div class="tableContainer"><h2>Accurate</h2>
             <p>
               Provide accurate and reliable wildfire data to help users make
               informed decisions.
@@ -19,7 +19,7 @@ export default function Values() {
         </tr>
 
         <tr>
-          <th><div class="tableContainer"><h2>Responsibility</h2>
+          <th><div class="tableContainer"><h2>Responsible</h2>
             <p>
               We are commited to providing information to support safe and responsible
               environmental practices.
