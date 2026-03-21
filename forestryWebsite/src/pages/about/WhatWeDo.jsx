@@ -13,7 +13,7 @@ export default function WhatWeDo() {
 
             <div className="cardInfo">
                 <h1>What We Do</h1>
-                <p>Wildfire Information Dashboard (Alberta)
+                <p>Burnstown
                     offers a tool that displays a real-time wildfire map, as well as providing
                     information that helps educate the masses to prevent wildfires from happening
                     in the first place.</p>

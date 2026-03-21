@@ -6,6 +6,8 @@ import Mission from "./Mission";
 import WhatWeDo from "./WhatWeDo";
 import Values from "./Values";
 
+import Footer from "../../components/Footer/Footer";
+
 export function About() {
   return (
     <main>
@@ -23,6 +25,8 @@ export function About() {
 
       <Mission />
       <Values />
+
+      <Footer />
 
     </main>
   );
