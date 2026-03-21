@@ -1,41 +1,24 @@
 export default function LoginForm() {
-    return (
-     
-        <div class="loginContainer">
-            <div class="loginForm">
-                <div class="formGrid">
-                    <label for="name">Username</label>
-                    <input type="text" id="name"></input>
+  return (
+    <div className="loginContainer">
+      <div className="loginFormCard">
+        <form id="loginForm">
+          <div className="loginFormGrid">
 
-                    <label for="password">Password</label>
-                    <input type="password" id="password"></input>
+            <label htmlFor="name">Username:</label>
+            <input type="text" id="name" required />
 
+            <label htmlFor="password">Password:</label>
+            <input type="password" id="password" minLength="6" required />
 
-                </div>
+          </div>
 
+          <div className="loginButtons">
+            <button id="loginSubmit" type="submit">Login</button>
+          </div>
 
-            <div class="loginButtons">
-                <button id="loginSubmit" type="submit">Login</button>
-
-            </div>
-
-            
-            </div>
-
-
-        </div>
-
-            
-
-    )
-
-
-
-
-
-
-
-
-
-
+        </form>
+      </div>
+    </div>
+  );
 }

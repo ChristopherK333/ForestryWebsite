@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+}
+
+.nav-right {
+  margin-left: auto; /* pushes this group to the far right */
+}
+
+.navbar button {
+  margin: 0 5px; /* spacing between all buttons */
+}

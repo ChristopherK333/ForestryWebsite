@@ -1,5 +1,6 @@
 import "./Login.style.css"
 import LoginForm from "./LoginForm";
+import Footer from "../../components/Footer/Footer";
 
 
 
@@ -7,11 +8,12 @@ export function Login() {
     return (
         <main>
             <div class="hero">
-                <p>placeholder text for testing</p>
+                
 
             </div>
 
         <LoginForm/>
+        <Footer/>
 
         </main>
 
@@ -23,7 +25,7 @@ export function Login() {
 
  
 
-    );
+    )
 
 
 
