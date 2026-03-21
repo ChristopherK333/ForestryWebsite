@@ -1,8 +1,15 @@
-.grid {
+.homeLayout {
   display: grid;
-  grid-template-columns: repeat(12, [col-start] 1fr);
-  gap: 18px;
-  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.map-container {
+  grid-column: 2 / span 9;
+  grid-row: 1 / span 2;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
 }
 
 /* .map {
