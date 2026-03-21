@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer";
 import "./Home.style.css";
 
 export function Home() {
@@ -10,6 +11,7 @@ export function Home() {
       <div className="graph">
         <h2>Graph</h2>
       </div> */}
+      <Footer />
     </div>
   );
 }

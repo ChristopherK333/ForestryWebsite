@@ -1,0 +1,12 @@
+.footerSectionLayout {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerList {
+  padding: 0px;
+}
+
+.footerList li {
+  list-style: none;
+}
