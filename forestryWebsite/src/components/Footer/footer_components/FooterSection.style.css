@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.footerCategory {
+  margin-bottom: 0px;
+}
+
 .footerList {
   padding: 0px;
 }

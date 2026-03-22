@@ -10,7 +10,7 @@ export default function Footer() {
           <img src={logo} alt="Forestry Logo" className="logo" />
         </div>
 
-        <h1>Burnstown</h1>
+        <h1 className="logoName">Fire Watch</h1>
       </div>
 
       <div className="linksDiv">
