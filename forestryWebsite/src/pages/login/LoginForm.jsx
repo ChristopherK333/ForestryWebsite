@@ -5,11 +5,17 @@ export default function LoginForm() {
         <form id="loginForm">
           <div className="loginFormGrid">
 
+
+            <div className="formGroup">
             <label htmlFor="name">Username:</label>
             <input type="text" id="name" required />
+            </div>
 
+            <div className="formGroup">
             <label htmlFor="password">Password:</label>
             <input type="password" id="password" minLength="6" required />
+            </div>
+
 
           </div>
 

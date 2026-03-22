@@ -24,9 +24,16 @@
 /* layout for form */
 .loginFormGrid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;  /* default mobile  */
     gap: 15px;
     align-items: center;
+}
+
+@media (min-width: 768px){
+.loginFormGrid{
+    grid-template-columns: 1fr 1fr;
+}
+
 }
 
 
@@ -45,7 +52,7 @@
     padding: 20px;
     border-radius: 10px;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 /* .tableContainer {
@@ -61,4 +68,17 @@
     margin-top: 20px;
     margin-right: 20px;
     font-family: "Courier Prime", monospace;
+}
+
+
+.formGroup input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box; /* IMPORTANT: keeps padding inside width */
+    border-radius: 6px;
+}
+
+.formGroup label {
+    margin-bottom: 5px;
+    font-weight: 600;
 }
