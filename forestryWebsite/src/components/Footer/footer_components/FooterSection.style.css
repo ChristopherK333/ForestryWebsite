@@ -10,3 +10,9 @@
 .footerList li {
   list-style: none;
 }
+
+@media screen and (max-width: 728px) {
+  .footerSectionLayout {
+    text-align: center;
+  }
+}

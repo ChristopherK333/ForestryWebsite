@@ -1,9 +1,10 @@
 import "./ChartContainer.style.css";
+import chartImage from "../../assets/chart.svg";
 
 export function ChartContainer() {
   return (
-    <div>
-      <h2>Chart</h2>
+    <div className="chart-wrapper">
+      <img className="chart" src={chartImage} alt="Chart" />
     </div>
   );
 }

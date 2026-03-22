@@ -1,9 +1,10 @@
 import "./GraphContainer.style.css";
+import graphImage from "../../assets/bar-fill-vertical.svg";
 
 export function GraphContainer() {
   return (
-    <div>
-      <h2>Graph</h2>
+    <div className="graph-wrapper">
+      <img className="graph" src={graphImage} alt="Graph" />
     </div>
   );
 }

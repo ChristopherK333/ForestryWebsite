@@ -6,7 +6,10 @@ export default function Footer() {
   return (
     <div className="footerLayout">
       <div className="logoSection">
-        <img src={logo} alt="Forestry Logo" className="logo" />
+        <div className="logoWrapper">
+          <img src={logo} alt="Forestry Logo" className="logo" />
+        </div>
+
         <h1>Burnstown</h1>
       </div>
 
@@ -34,7 +37,7 @@ export default function Footer() {
         />
       </div>
       <div className="lowerFooter">
-        <div>
+        <div className="allRightsSection">
           <p>&copy; 2026 Forestry Website. All rights reserved.</p>
         </div>
         <div className="legalSection">
