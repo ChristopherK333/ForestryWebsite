@@ -1,8 +1,11 @@
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background-color: #f8f8f8;
+  background-color: var(--tertiary-color);
 }
 
 .nav-right {
@@ -10,5 +13,15 @@
 }
 
 .navbar button {
-  margin: 0 5px; /* spacing between all buttons */
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.navbar a {
+    padding: 5px;
 }
