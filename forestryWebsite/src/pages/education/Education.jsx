@@ -6,6 +6,8 @@ import Prevention from "./Prevention.jsx";
 import BeInformed from "./BeInformed.jsx";
 import BePrepared from "./BePrepared.jsx";
 
+import Footer from "../../components/Footer/Footer";
+
 export function Education() {
   return (
     <main>
@@ -38,8 +40,12 @@ export function Education() {
 
         <BePrepared />
 
+        
+
       </div>
 
+    
+    <Footer />
     </main>
 
 
