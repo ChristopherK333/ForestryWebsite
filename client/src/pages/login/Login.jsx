@@ -1,38 +1,23 @@
 import "./Login.style.css"
 import LoginForm from "./LoginForm";
 import Footer from "../../components/Footer/Footer";
-import heroImg from "./pictures/shayd-johnson.jpg"; 
+import heroImg from "./pictures/shayd-johnson.jpg";
 
-
-
-export function Login() {
+export function Login({ setLoggedInUser }) {
     return (
         <main>
             <div class="hero">
-                        <img
+                <img
                     src={heroImg}
                     alt="Forestry"
                     title="Photo by Shayd Johnson from Unsplash">
-                    </img>
+                </img>
 
             </div>
 
-        <LoginForm/>
-        <Footer/>
+            <LoginForm setLoggedInUser = { setLoggedInUser } />
+            <Footer />
 
         </main>
-
-
-
-
-
-
-
- 
-
     );
-
-
-
-
 }

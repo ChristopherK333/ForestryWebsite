@@ -1,10 +1,10 @@
 import { Navbar } from "./components/Navbar/Navbar";
 import { Outlet } from "react-router-dom";
 
-export function Layout() {
+export function Layout({ loggedInUser, setLoggedInUser }) {
   return (
     <div>
-      <Navbar />
+      <Navbar loggedInUser={loggedInUser} setLoggedInUser={setLoggedInUser}/>
       <main>
         <Outlet />
       </main>

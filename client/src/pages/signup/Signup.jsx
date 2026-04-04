@@ -1,7 +1,6 @@
 import "./Signup.style.css"
 import SignupForm from "./SignupForm";
 import Footer from "../../components/Footer/Footer"; 
-
 import heroImg from "./pictures/shayd-johnson.jpg"; 
 
 export function Signup() {
@@ -19,10 +18,5 @@ export function Signup() {
         <SignupForm/>
         <Footer/>
         </main>
-
-
-
     )
-
-
 }
