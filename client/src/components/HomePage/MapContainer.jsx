@@ -2,15 +2,10 @@ import "./MapContainer.style.css";
 import mapImage from "../../assets/map_placeholder.jpg";
 import { useEffect } from "react";
 
-import Map from "https://js.arcgis.com/4.25/@arcgis/core/Map.js";
-import MapView from "https://js.arcgis.com/4.25/@arcgis/core/views/MapView.js";
+import Map from "https://js.arcgis.com/5.0/@arcgis/core/Map.js";
+import MapView from "https://js.arcgis.com/5.0/@arcgis/core/views/MapView.js";
 
 export function MapContainer() {
-  // useEffect(() => {
-  //   const map = new Map({
-  //     basemap: "topo-vector",
-  //   });
-  // }, []);
   useEffect(() => {
     const map = new Map({
       basemap: "topo-vector",
