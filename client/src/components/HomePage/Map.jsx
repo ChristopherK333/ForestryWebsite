@@ -11,7 +11,6 @@ const Map = () => {
   const mapRef = useRef(null);
   const latitude = 53.5462;
   const longitude = -113.4937;
-  // const [map, setMap] = useState(null);
 
   return (
     <div className="map-wrapper">
@@ -36,6 +35,7 @@ const Map = () => {
             layers: 'RADAR_1KM_RRAI',
             format: 'image/png',
             transparent: true,
+            opacity: 0.3,
             version: '1.3.0'
           }}
           attribution='Weather data <a href="https://eccc-msc.github.io/open-data/licence/readme_en/">ECCC</a>'
@@ -48,6 +48,7 @@ const Map = () => {
             layers: 'RADAR_1KM_RSNO',
             format: 'image/png',
             transparent: true,
+            opacity: 0.3,
             version: '1.3.0'
           }}
           attribution='Weather data <a href="https://eccc-msc.github.io/open-data/licence/readme_en/">ECCC</a>'
