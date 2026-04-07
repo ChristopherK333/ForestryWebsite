@@ -4,13 +4,17 @@
 
 ### Navigate to client folder
 
-nmp install
+npm install
 
 ### Navigate to server folder
 
-nmp install
+npm install
 
 ### Leaflet (in client)
 
 npm install leaflet
 npm install react-leaflet
+
+### Plotly Graphs(in client)
+
+npm install plotly.js-dist-min
