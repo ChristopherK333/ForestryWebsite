@@ -50,6 +50,21 @@ function isValidPassword(password) {
   );
 }
 
+function isValidEmail(email) {
+  return (
+    typeof email === "string" &&
+    /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)
+  );
+}
+
+function isValidPhone(phone) {
+  return (
+    typeof phone === "string" &&
+    /^(?:\([0-9]{3}\)|[0-9]{3})[- ]?[0-9]{3}[- ]?[0-9]{4}$/.test(phone)
+  );
+}
+
+
 app.get("/api/health", (req, res) => {
   res.json({ message: "API is running" });
 });
@@ -74,7 +89,11 @@ app.post("/api/register", async (req, res) => {
     }
 
     if (!isValidUsername(username) || !isValidPassword(password)) {
-      return res.status(400).json({ message: "Invalid username/password." });
+      return res.status(400).json({ message: "Make sure username is valid and password is > 6." });
+    }
+
+    if (!isValidEmail(email) || !isValidPhone(phone)) {
+      return res.status(400).json({ message: "Invalid contacts." });
     }
 
     const userExists = await User.findOne({ username });
@@ -151,6 +170,10 @@ app.post("/api/contact", async (req, res) => {
 
     if (!fullName || !email || !phone || !message) {
       return res.status(400).json({ message: "Please fill out all fields." });
+    }
+    
+    if (!isValidEmail(email) || !isValidPhone(phone)) {
+      return res.status(400).json({ message: "Please enter valid contact." });
     }
 
     const contactDetails = await Contact.create({ fullName, email, phone, message });
