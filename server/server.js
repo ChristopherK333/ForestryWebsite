@@ -7,6 +7,7 @@ const session = require("express-session");
 const cors = require("cors");
 
 const User = require("./model/User");
+const Contact = require("./model/Contact");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -49,13 +50,6 @@ function isValidPassword(password) {
   );
 }
 
-function requireLogin(req, res, next) {
-  if (!req.session.username) {
-    return res.status(401).json({ message: "You must log in first." });
-  }
-  next();
-}
-
 app.get("/api/health", (req, res) => {
   res.json({ message: "API is running" });
 });
@@ -63,16 +57,16 @@ app.get("/api/health", (req, res) => {
 app.post("/api/register", async (req, res) => {
   try {
     const {
-        username,
-        password,
-        email,
-        first,
-        last,
-        phone,
-        address,
-        city,
-        province,
-        postalCode
+      username,
+      password,
+      email,
+      first,
+      last,
+      phone,
+      address,
+      city,
+      province,
+      postalCode
     } = req.body;
 
     if (!username || !password) {
@@ -92,17 +86,17 @@ app.post("/api/register", async (req, res) => {
     const passwordHash = await bcrypt.hash(password, 10);
 
     const newUser = await User.create({
-            username,
-            passwordHash,
-            email,
-            first,
-            last,
-            phone,
-            address,
-            city,
-            province,
-            postalCode
-        });
+      username,
+      passwordHash,
+      email,
+      first,
+      last,
+      phone,
+      address,
+      city,
+      province,
+      postalCode
+    });
 
     res.status(201).json({ message: "Registration successful." });
   } catch (error) {
@@ -149,6 +143,22 @@ app.get("/api/me", (req, res) => {
     return res.status(401).json({ message: "Not logged in." });
   }
   res.json({ username: req.session.username });
+});
+
+app.post("/api/contact", async (req, res) => {
+  try {
+    const { fullName, email, phone, message } = req.body;
+
+    if (!fullName || !email || !phone || !message) {
+      return res.status(400).json({ message: "Please fill out all fields." });
+    }
+
+    const contactDetails = await Contact.create({ fullName, email, phone, message });
+
+    res.status(201).json({ message: "Message sent successfully." });
+  } catch (error) {
+    res.status(500).json({ message: "Server error during sending message." });
+  }
 });
 
 app.listen(PORT, () => {
