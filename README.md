@@ -8,7 +8,8 @@ npm install
 
 ### Navigate to server folder
 
-npm install
+npm init -y
+npm install express express-session bcrypt cors mongoose dotenv
 
 ### Leaflet (in client)
 
