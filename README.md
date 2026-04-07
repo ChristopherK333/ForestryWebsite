@@ -10,7 +10,7 @@ nmp install
 
 nmp install
 
-### Leaflet
+### Leaflet (in client)
 
 npm install leaflet
 npm install react-leaflet
