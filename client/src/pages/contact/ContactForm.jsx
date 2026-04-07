@@ -26,7 +26,14 @@ export default function ContactForm() {
 
         const data = await response.json();
         setMessage(data.message);
-    
+
+        if (response.ok) {
+            setContactName("");
+            setContactEmail("");
+            setContactPhone("");
+            setContactMessage("");
+        }
+
     }
 
     return (
