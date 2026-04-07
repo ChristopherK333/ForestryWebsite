@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import { MapContainer, TileLayer, WMSTileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "./Map.style.css";
-import "./Wildfire.style.css";
 import Wildfire from "./Wildfire";
 import WMSLegend from "./WeatherLegend";
 
