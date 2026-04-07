@@ -15,17 +15,17 @@ const convertToLatLng = (x, y) => {
   return [lat, lng];
 };
 
-// Color based on fire status
+// Color based on fire status  (made it all red for better visuals can change back if we need to)
 const getColor = (status) => {
   switch (status) {
     case "Out of Control":
       return "red";
     case "Being Held":
-      return "orange";
+      return "red";
     case "Under Control":
-      return "green";
+      return "red";
     default:
-      return "gray";
+      return "red";
   }
 };
 
