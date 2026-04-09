@@ -28,7 +28,7 @@ export function ChartContainer() {
     const fetchFires = async () => {
       try {
         const res = await fetch(
-          "https://services.arcgis.com/Eb8P5h4CJk8utIBz/ArcGIS/rest/services/Active_Wildfires_/FeatureServer/0/query?where=1=1&outFields=*&returnGeometry=false&f=json"
+          "https://services.arcgis.com/Eb8P5h4CJk8utIBz/ArcGIS/rest/services/Active_Wildfires_(PROD)/FeatureServer/0/query?where=1=1&outFields=*&returnGeometry=false&f=json"
         );
         const data = await res.json();
         setFires(data.features || []);
