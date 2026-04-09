@@ -36,7 +36,7 @@ const Wildfire = () => {
     const fetchFires = async () => {
       try {
         const res = await fetch(
-          "https://services.arcgis.com/Eb8P5h4CJk8utIBz/ArcGIS/rest/services/Active_Wildfires_/FeatureServer/0/query?where=1=1&outFields=*&returnGeometry=true&f=json"  //this is open source so we don't need an API key, wyatt found it.
+          "https://services.arcgis.com/Eb8P5h4CJk8utIBz/ArcGIS/rest/services/Active_Wildfires_(PROD)/FeatureServer/0/query?where=1=1&outFields=*&returnGeometry=true&f=json"  //this is open source so we don't need an API key, wyatt found it.
         );
         const data = await res.json();  //this converts the response to a json. 
 
